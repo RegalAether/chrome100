@@ -273,7 +273,7 @@ func main() {
 		port = envPort
 	}
 
-	address := "127.0.0.1:" + strconv.Itoa(port)
+	address := "0.0.0.0:" + strconv.Itoa(port)
 	fmt.Println("Listening on http://" + address)
 	log.Fatal(http.ListenAndServe(address, nil))
 }
